@@ -6,6 +6,7 @@
 	<property name="dist" location="dist"/>
 	<property name="test" location="test"/>
 	<property name="junit" location="lib/junit.jar"/>
+	<property name="junit2" location="lib/hamcrest-core-1.3.jar"/>
 
 	<path id="classpath.test">
 		<pathelement location="${junit}" />
@@ -26,6 +27,7 @@
 		<javac srcdir="${test}" destdir="${build}/test">
 			<classpath>
 				<pathelement location="${junit}"/>
+				<pathelement location="${junit2}"/>
 			</classpath>
 		</javac>
 	</target>
