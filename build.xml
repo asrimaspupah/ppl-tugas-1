@@ -39,6 +39,7 @@
 
 	<target name="test" depends="compile">
 		<junit fork="yes" haltonfailure="true">
+			<classpath refid="classpath.test" />
 			<classpath>
 				<pathelement location="${junit}"/>
 				<pathelement location="${junit2}"/>
